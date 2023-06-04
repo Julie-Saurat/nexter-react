@@ -1,0 +1,27 @@
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 1.5rem;
+
+  &__icon {
+    grid-row: 1/span 2;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-1rem);
+    
+    svg{
+      width: inherit;
+      height: inherit;
+  
+      path{
+        fill: $color-primary;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+
+  }
+}
